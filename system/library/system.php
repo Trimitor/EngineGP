@@ -990,12 +990,12 @@
 		{
 			global $cfg;
 
-			$fileimg = file_exists(TPL.'/images/country/'.$name.'.png');
+			$fileimg = file_exists(TPL.'\/images\/'.$cfg['design'].'\/country\/'.$name.'.png');
 
 			if($fileimg)
-				return $cfg['http'].'template/images/country/'.$name.'.png';
+				return $cfg['http'].'template/images\/'.$cfg['design'].'\/country\/'.$name.'.png';
 
-			return $cfg['http'].'template/images/country/none.png';
+			return $cfg['http'].'template/images/'.$cfg['design'].'/country/none.png';
 		}
 
 		public static function ipproxy()

@@ -23,10 +23,10 @@
 		{
 			global $cfg;
 
-			if(file_exists(TPL.'/images/country/'.$name.'.png'))
-				return $cfg['url'].'template/images/country/'.$name.'.png';
+			if(file_exists(TPL.'\/images\/'.$cfg['design'].'\/country\/'.$name.'.png'))
+				return $cfg['url'].'template/images/'.$cfg['design'].'\/country\/'.$name.'.png';
 
-			return $cfg['url'].'template/images/country/none.png';
+			return $cfg['url'].'template/images/'.$cfg['design'].'/country/none.png';
 		}
 
 		public static function determine($status, $go = false, $tpl = 'content')
